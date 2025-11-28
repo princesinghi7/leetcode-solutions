@@ -1,0 +1,35 @@
+class Solution {
+public:
+    vector<vector<int>> graph;
+    long long result = 0;
+    int k;
+
+    long long dfs(int node, int parent, vector<int>& values) {
+        long long sum = values[node];
+
+        for (int child : graph[node]) {
+            if (child == parent) continue;
+            sum += dfs(child, node, values);
+        }
+
+        if (sum % k == 0) {
+            result++;  // this subtree forms a valid component
+            return 0;  // cut here → no sum passed to parent
+        }
+
+        return sum;
+    }
+
+    int maxKDivisibleComponents(int n, vector<vector<int>>& edges, vector<int>& values, int K) {
+        k = K;
+        graph.resize(n);
+
+        for (auto &edge : edges) {
+            graph[edge[0]].push_back(edge[1]);
+            graph[edge[1]].push_back(edge[0]);
+        }
+
+        dfs(0, -1, values);
+        return result;
+    }
+};
