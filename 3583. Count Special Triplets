@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int specialTriplets(vector<int>& nums) {
+        const long long MOD = 1e9 + 7;
+        unordered_map<int,long long> right, left;
+        for (int x : nums) right[x]++;
+        
+        long long ans = 0;
+        for (int j = 0; j < nums.size(); j++) {
+            right[nums[j]]--;
+            long long need = nums[j] * 2LL;
+            long long a = left[need];
+            long long b = right[need];
+            ans = (ans + (a * b) % MOD) % MOD;
+            left[nums[j]]++;
+        }
+        return ans;
+    }
+};
