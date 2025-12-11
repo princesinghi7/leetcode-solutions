@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+class Solution {
+public:
+    int countCoveredBuildings(int n, vector<vector<int>>& b) {
+        unordered_map<int, vector<int>> rows, cols;
+        for(auto &p : b) {
+            rows[p[0]].push_back(p[1]);
+            cols[p[1]].push_back(p[0]);
+        }
+        for(auto &it : rows) sort(it.second.begin(), it.second.end());
+        for(auto &it : cols) sort(it.second.begin(), it.second.end());
+        int ans = 0;
+        for(auto &p : b) {
+            int x = p[0], y = p[1];
+            auto &r = rows[x];
+            auto &c = cols[y];
+            auto ir = lower_bound(r.begin(), r.end(), y);
+            auto ic = lower_bound(c.begin(), c.end(), x);
+            if(ir != r.begin() && next(ir) != r.end() && ic != c.begin() && next(ic) != c.end())
+                ans++;
+        }
+        return ans;
+    }
+};
