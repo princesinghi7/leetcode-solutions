@@ -1,0 +1,62 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+struct OfflineUser {
+    int returnTimestamp;
+    int userId;
+    bool operator>(const OfflineUser& other) const {
+        return returnTimestamp > other.returnTimestamp;
+    }
+};
+
+class Solution {
+public:
+    vector<int> countMentions(int numberOfUsers, vector<vector<string>>& events) {
+        vector<int> ans(numberOfUsers);
+        vector<int> online(numberOfUsers, true);
+        priority_queue<OfflineUser, vector<OfflineUser>, greater<>> offlineQueue;
+        int allMentionsCount = 0;
+
+        sort(events.begin(), events.end(), [](auto &a, auto &b) {
+            int ta = stoi(a[1]);
+            int tb = stoi(b[1]);
+            char ea = a[0][0];
+            char eb = b[0][0];
+            if (ta != tb) return ta < tb;
+            return ea > eb;
+        });
+
+        for (auto &event : events) {
+            int timestamp = stoi(event[1]);
+            while (!offlineQueue.empty() && offlineQueue.top().returnTimestamp <= timestamp) {
+                online[offlineQueue.top().userId] = true;
+                offlineQueue.pop();
+            }
+
+            if (event[0] == "MESSAGE") {
+                string &mentionsString = event[2];
+                if (mentionsString == "ALL") {
+                    allMentionsCount++;
+                } else if (mentionsString == "HERE") {
+                    for (int i = 0; i < numberOfUsers; i++)
+                        if (online[i]) ans[i]++;
+                } else {
+                    stringstream ss(mentionsString);
+                    string id;
+                    while (ss >> id) {
+                        int uid = stoi(id.substr(2));
+                        ans[uid]++;
+                    }
+                }
+            } else {
+                int uid = stoi(event[2]);
+                online[uid] = false;
+                offlineQueue.push({timestamp + 60, uid});
+            }
+        }
+
+        for (int i = 0; i < numberOfUsers; i++)
+            ans[i] += allMentionsCount;
+        return ans;
+    }
+};
