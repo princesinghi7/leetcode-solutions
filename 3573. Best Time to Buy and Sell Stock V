@@ -1,0 +1,26 @@
+class Solution {
+public:
+    long long maximumProfit(vector<int>& prices, int k) {
+        const long long NEG = -4e18;
+        int n = prices.size();
+
+        vector<long long> free(k + 1, NEG);
+        vector<long long> longHold(k + 1, NEG);
+        vector<long long> shortHold(k + 1, NEG);
+
+        free[0] = 0;
+
+        for (int p : prices) {
+            for (int t = k; t >= 1; t--) {
+                free[t] = max(free[t],
+                              max(longHold[t] + p, shortHold[t] - p));
+                longHold[t] = max(longHold[t], free[t - 1] - p);
+                shortHold[t] = max(shortHold[t], free[t - 1] + p);
+            }
+        }
+
+        long long ans = 0;
+        for (int t = 0; t <= k; t++) ans = max(ans, free[t]);
+        return ans;
+    }
+};
