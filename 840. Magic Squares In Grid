@@ -1,0 +1,36 @@
+class Solution {
+public:
+    bool ok(vector<vector<int>>& g, int r, int c) {
+        vector<int> cnt(10,0);
+        for(int i=r;i<r+3;i++){
+            for(int j=c;j<c+3;j++){
+                int v=g[i][j];
+                if(v<1||v>9||cnt[v]) return false;
+                cnt[v]=1;
+            }
+        }
+        int s=g[r][c]+g[r][c+1]+g[r][c+2];
+        for(int i=0;i<3;i++){
+            int rs=0,cs=0;
+            for(int j=0;j<3;j++){
+                rs+=g[r+i][c+j];
+                cs+=g[r+j][c+i];
+            }
+            if(rs!=s||cs!=s) return false;
+        }
+        if(g[r][c]+g[r+1][c+1]+g[r+2][c+2]!=s) return false;
+        if(g[r][c+2]+g[r+1][c+1]+g[r+2][c]!=s) return false;
+        return true;
+    }
+
+    int numMagicSquaresInside(vector<vector<int>>& grid) {
+        int n=grid.size(), m=grid[0].size(), ans=0;
+        if(n<3||m<3) return 0;
+        for(int i=0;i+2<n;i++){
+            for(int j=0;j+2<m;j++){
+                if(ok(grid,i,j)) ans++;
+            }
+        }
+        return ans;
+    }
+};
