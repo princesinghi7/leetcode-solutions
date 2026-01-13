@@ -1,0 +1,30 @@
+class Solution {
+public:
+    double separateSquares(vector<vector<int>>& squares) {
+        double low = 0, high = 0;
+        for(auto &s : squares)
+            high = max(high, (double)s[1] + s[2]);
+
+        auto below = [&](double y) {
+            double area = 0;
+            for(auto &s : squares) {
+                double b = s[1], l = s[2];
+                if(y <= b) continue;
+                double h = min(l, y - b);
+                area += h * l;
+            }
+            return area;
+        };
+
+        double total = 0;
+        for(auto &s : squares)
+            total += (double)s[2] * s[2];
+
+        for(int i = 0; i < 60; i++) {
+            double mid = (low + high) / 2;
+            if(below(mid) * 2 < total) low = mid;
+            else high = mid;
+        }
+        return low;
+    }
+};
