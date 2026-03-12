@@ -1,0 +1,101 @@
+class DSU {
+public:
+    vector<int> p, r;
+
+    DSU(int n){
+        p.resize(n);
+        r.resize(n,0);
+        for(int i=0;i<n;i++) p[i]=i;
+    }
+
+    int find(int x){
+        if(p[x]!=x) p[x]=find(p[x]);
+        return p[x];
+    }
+
+    bool unite(int a,int b){
+        a=find(a);
+        b=find(b);
+
+        if(a==b) return false;
+
+        if(r[a]<r[b]) swap(a,b);
+
+        p[b]=a;
+
+        if(r[a]==r[b]) r[a]++;
+
+        return true;
+    }
+};
+
+class Solution {
+public:
+
+    bool can(int n, vector<vector<int>>& edges, int k, int x){
+
+        DSU dsu(n);
+        int used=0;
+        int upgrades=0;
+
+        // must edges
+        for(auto &e:edges){
+            int u=e[0],v=e[1],s=e[2],must=e[3];
+
+            if(must){
+                if(s<x) return false;
+
+                if(!dsu.unite(u,v)) return false;
+
+                used++;
+            }
+        }
+
+        // optional without upgrade
+        for(auto &e:edges){
+            int u=e[0],v=e[1],s=e[2],must=e[3];
+
+            if(must) continue;
+
+            if(s>=x && dsu.unite(u,v))
+                used++;
+        }
+
+        // optional with upgrade
+        for(auto &e:edges){
+            int u=e[0],v=e[1],s=e[2],must=e[3];
+
+            if(must) continue;
+
+            if(s<x && 2*s>=x && upgrades<k){
+                if(dsu.unite(u,v)){
+                    upgrades++;
+                    used++;
+                }
+            }
+        }
+
+        return used==n-1;
+    }
+
+    int maxStability(int n, vector<vector<int>>& edges, int k) {
+
+        int l=0,r=200000;
+        int ans=-1;
+
+        while(l<=r){
+
+            int mid=(l+r)/2;
+
+            if(can(n,edges,k,mid)){
+                ans=mid;
+                l=mid+1;
+            }
+            else{
+                r=mid-1;
+            }
+        }
+
+        return ans;
+    }
+};
