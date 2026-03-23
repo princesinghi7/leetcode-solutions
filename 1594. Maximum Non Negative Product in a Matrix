@@ -1,0 +1,37 @@
+class Solution {
+public:
+    int maxProductPath(vector<vector<int>>& grid) {
+        int m = grid.size();
+        int n = grid[0].size();
+        long MOD = 1e9 + 7;
+
+        vector<vector<long>> max_dp(m, vector<long>(n, 0));
+        vector<vector<long>> min_dp(m, vector<long>(n, 0));
+
+        max_dp[0][0] = min_dp[0][0] = grid[0][0];
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == 0 && j == 0) continue;
+
+                long val = grid[i][j];
+                long max_val = LONG_MIN;
+                long min_val = LONG_MAX;
+
+                if (i > 0) {
+                    max_val = max(max_val, max(val * max_dp[i-1][j], val * min_dp[i-1][j]));
+                    min_val = min(min_val, min(val * max_dp[i-1][j], val * min_dp[i-1][j]));
+                }
+                if (j > 0) {
+                    max_val = max(max_val, max(val * max_dp[i][j-1], val * min_dp[i][j-1]));
+                    min_val = min(min_val, min(val * max_dp[i][j-1], val * min_dp[i][j-1]));
+                }
+
+                max_dp[i][j] = max_val;
+                min_dp[i][j] = min_val;
+            }
+        }
+
+        return max_dp[m-1][n-1] < 0 ? -1 : max_dp[m-1][n-1] % MOD;
+    }
+};
