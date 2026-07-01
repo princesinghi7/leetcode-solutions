@@ -1,0 +1,70 @@
+class Solution {
+    static final int[][] dirs = {{1,0},{0,1},{-1,0},{0,-1}};
+
+    public int maximumSafenessFactor(List<List<Integer>> grid) {
+
+        int n = grid.size();
+        int[][] A = new int[n][n];
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                A[i][j] = grid.get(i).get(j);
+            }
+        }
+
+        if(A[0][0]==1 || A[n-1][n-1]==1)
+            return 0;
+
+        Queue<int[]> q = new LinkedList<>();
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(A[i][j]==1)
+                    q.offer(new int[]{i,j});
+            }
+        }
+
+        while(!q.isEmpty()){
+            int[] cur=q.poll();
+            int i=cur[0], j=cur[1];
+            int v=A[i][j];
+
+            for(int[] d:dirs){
+                int x=i+d[0], y=j+d[1];
+
+                if(x>=0 && y>=0 && x<n && y<n && A[x][y]==0){
+                    A[x][y]=v+1;
+                    q.offer(new int[]{x,y});
+                }
+            }
+        }
+
+        PriorityQueue<int[]> pq =
+            new PriorityQueue<>((a,b)->b[0]-a[0]);
+
+        pq.offer(new int[]{A[0][0],0,0});
+        A[0][0]*=-1;
+
+        while(!pq.isEmpty()){
+            int[] cur=pq.poll();
+
+            int sf=cur[0];
+            int i=cur[1];
+            int j=cur[2];
+
+            if(i==n-1 && j==n-1)
+                return sf-1;
+
+            for(int[] d:dirs){
+                int x=i+d[0], y=j+d[1];
+
+                if(x>=0 && y>=0 && x<n && y<n && A[x][y]>0){
+                    pq.offer(new int[]{Math.min(sf,A[x][y]),x,y});
+                    A[x][y]*=-1;
+                }
+            }
+        }
+
+        return 0;
+    }
+}
