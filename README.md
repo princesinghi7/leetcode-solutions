@@ -37,9 +37,23 @@
 | ------- |
 | [0523-continuous-subarray-sum](https://github.com/princesinghi7/leetcode-solutions/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/princesinghi7/leetcode-solutions/tree/master/0560-subarray-sum-equals-k) |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/princesinghi7/leetcode-solutions/tree/master/3532-path-existence-queries-in-a-graph-i) |
 ## Hash Table
 |  |
 | ------- |
 | [0523-continuous-subarray-sum](https://github.com/princesinghi7/leetcode-solutions/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/princesinghi7/leetcode-solutions/tree/master/0560-subarray-sum-equals-k) |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/princesinghi7/leetcode-solutions/tree/master/3532-path-existence-queries-in-a-graph-i) |
+## Binary Search
+|  |
+| ------- |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/princesinghi7/leetcode-solutions/tree/master/3532-path-existence-queries-in-a-graph-i) |
+## Union-Find
+|  |
+| ------- |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/princesinghi7/leetcode-solutions/tree/master/3532-path-existence-queries-in-a-graph-i) |
+## Graph Theory
+|  |
+| ------- |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/princesinghi7/leetcode-solutions/tree/master/3532-path-existence-queries-in-a-graph-i) |
 <!---LeetCode Topics End-->
