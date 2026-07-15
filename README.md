@@ -23,6 +23,7 @@
 |  |
 | ------- |
 | [0523-continuous-subarray-sum](https://github.com/princesinghi7/leetcode-solutions/tree/master/0523-continuous-subarray-sum) |
+| [3658-gcd-of-odd-and-even-sums](https://github.com/princesinghi7/leetcode-solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/princesinghi7/leetcode-solutions/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
 ## String
 |  |
@@ -83,4 +84,8 @@
 |  |
 | ------- |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/princesinghi7/leetcode-solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
+## Number Theory
+|  |
+| ------- |
+| [3658-gcd-of-odd-and-even-sums](https://github.com/princesinghi7/leetcode-solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
 <!---LeetCode Topics End-->
