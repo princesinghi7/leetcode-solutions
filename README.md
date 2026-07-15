@@ -22,6 +22,7 @@
 ## Math
 |  |
 | ------- |
+| [0204-count-primes](https://github.com/princesinghi7/leetcode-solutions/tree/master/0204-count-primes) |
 | [0519-random-flip-matrix](https://github.com/princesinghi7/leetcode-solutions/tree/master/0519-random-flip-matrix) |
 | [0523-continuous-subarray-sum](https://github.com/princesinghi7/leetcode-solutions/tree/master/0523-continuous-subarray-sum) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/princesinghi7/leetcode-solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
@@ -39,6 +40,7 @@
 ## Array
 |  |
 | ------- |
+| [0204-count-primes](https://github.com/princesinghi7/leetcode-solutions/tree/master/0204-count-primes) |
 | [0523-continuous-subarray-sum](https://github.com/princesinghi7/leetcode-solutions/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/princesinghi7/leetcode-solutions/tree/master/0560-subarray-sum-equals-k) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/princesinghi7/leetcode-solutions/tree/master/3532-path-existence-queries-in-a-graph-i) |
@@ -89,6 +91,7 @@
 ## Number Theory
 |  |
 | ------- |
+| [0204-count-primes](https://github.com/princesinghi7/leetcode-solutions/tree/master/0204-count-primes) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/princesinghi7/leetcode-solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
 ## Reservoir Sampling
 |  |
@@ -98,4 +101,8 @@
 |  |
 | ------- |
 | [0519-random-flip-matrix](https://github.com/princesinghi7/leetcode-solutions/tree/master/0519-random-flip-matrix) |
+## Enumeration
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/princesinghi7/leetcode-solutions/tree/master/0204-count-primes) |
 <!---LeetCode Topics End-->
