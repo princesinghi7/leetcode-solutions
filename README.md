@@ -22,6 +22,7 @@
 ## Math
 |  |
 | ------- |
+| [0519-random-flip-matrix](https://github.com/princesinghi7/leetcode-solutions/tree/master/0519-random-flip-matrix) |
 | [0523-continuous-subarray-sum](https://github.com/princesinghi7/leetcode-solutions/tree/master/0523-continuous-subarray-sum) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/princesinghi7/leetcode-solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/princesinghi7/leetcode-solutions/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
@@ -45,6 +46,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0519-random-flip-matrix](https://github.com/princesinghi7/leetcode-solutions/tree/master/0519-random-flip-matrix) |
 | [0523-continuous-subarray-sum](https://github.com/princesinghi7/leetcode-solutions/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/princesinghi7/leetcode-solutions/tree/master/0560-subarray-sum-equals-k) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/princesinghi7/leetcode-solutions/tree/master/3532-path-existence-queries-in-a-graph-i) |
@@ -88,4 +90,12 @@
 |  |
 | ------- |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/princesinghi7/leetcode-solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
+## Reservoir Sampling
+|  |
+| ------- |
+| [0519-random-flip-matrix](https://github.com/princesinghi7/leetcode-solutions/tree/master/0519-random-flip-matrix) |
+## Randomized
+|  |
+| ------- |
+| [0519-random-flip-matrix](https://github.com/princesinghi7/leetcode-solutions/tree/master/0519-random-flip-matrix) |
 <!---LeetCode Topics End-->
