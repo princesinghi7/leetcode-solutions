@@ -27,6 +27,7 @@
 | [0523-continuous-subarray-sum](https://github.com/princesinghi7/leetcode-solutions/tree/master/0523-continuous-subarray-sum) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/princesinghi7/leetcode-solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/princesinghi7/leetcode-solutions/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/princesinghi7/leetcode-solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## String
 |  |
 | ------- |
@@ -45,6 +46,7 @@
 | [0560-subarray-sum-equals-k](https://github.com/princesinghi7/leetcode-solutions/tree/master/0560-subarray-sum-equals-k) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/princesinghi7/leetcode-solutions/tree/master/3532-path-existence-queries-in-a-graph-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/princesinghi7/leetcode-solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/princesinghi7/leetcode-solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Hash Table
 |  |
 | ------- |
@@ -72,6 +74,7 @@
 |  |
 | ------- |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/princesinghi7/leetcode-solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/princesinghi7/leetcode-solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -88,11 +91,13 @@
 |  |
 | ------- |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/princesinghi7/leetcode-solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/princesinghi7/leetcode-solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Number Theory
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/princesinghi7/leetcode-solutions/tree/master/0204-count-primes) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/princesinghi7/leetcode-solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/princesinghi7/leetcode-solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Reservoir Sampling
 |  |
 | ------- |
@@ -105,4 +110,8 @@
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/princesinghi7/leetcode-solutions/tree/master/0204-count-primes) |
+## Simulation
+|  |
+| ------- |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/princesinghi7/leetcode-solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 <!---LeetCode Topics End-->
