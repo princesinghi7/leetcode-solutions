@@ -32,6 +32,7 @@
 ## String
 |  |
 | ------- |
+| [1946-largest-number-after-mutating-substring](https://github.com/princesinghi7/leetcode-solutions/tree/master/1946-largest-number-after-mutating-substring) |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/princesinghi7/leetcode-solutions/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
 ## Prefix Sum
 |  |
@@ -46,6 +47,7 @@
 | [0204-count-primes](https://github.com/princesinghi7/leetcode-solutions/tree/master/0204-count-primes) |
 | [0523-continuous-subarray-sum](https://github.com/princesinghi7/leetcode-solutions/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/princesinghi7/leetcode-solutions/tree/master/0560-subarray-sum-equals-k) |
+| [1946-largest-number-after-mutating-substring](https://github.com/princesinghi7/leetcode-solutions/tree/master/1946-largest-number-after-mutating-substring) |
 | [3312-sorted-gcd-pair-queries](https://github.com/princesinghi7/leetcode-solutions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/princesinghi7/leetcode-solutions/tree/master/3532-path-existence-queries-in-a-graph-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/princesinghi7/leetcode-solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
@@ -87,6 +89,7 @@
 ## Greedy
 |  |
 | ------- |
+| [1946-largest-number-after-mutating-substring](https://github.com/princesinghi7/leetcode-solutions/tree/master/1946-largest-number-after-mutating-substring) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/princesinghi7/leetcode-solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 ## Bit Manipulation
 |  |
