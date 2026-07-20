@@ -33,6 +33,7 @@
 |  |
 | ------- |
 | [0316-remove-duplicate-letters](https://github.com/princesinghi7/leetcode-solutions/tree/master/0316-remove-duplicate-letters) |
+| [1021-remove-outermost-parentheses](https://github.com/princesinghi7/leetcode-solutions/tree/master/1021-remove-outermost-parentheses) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/princesinghi7/leetcode-solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1946-largest-number-after-mutating-substring](https://github.com/princesinghi7/leetcode-solutions/tree/master/1946-largest-number-after-mutating-substring) |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/princesinghi7/leetcode-solutions/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
@@ -139,6 +140,7 @@
 |  |
 | ------- |
 | [0316-remove-duplicate-letters](https://github.com/princesinghi7/leetcode-solutions/tree/master/0316-remove-duplicate-letters) |
+| [1021-remove-outermost-parentheses](https://github.com/princesinghi7/leetcode-solutions/tree/master/1021-remove-outermost-parentheses) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/princesinghi7/leetcode-solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 ## Monotonic Stack
 |  |
