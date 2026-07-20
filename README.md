@@ -50,6 +50,7 @@
 | [0204-count-primes](https://github.com/princesinghi7/leetcode-solutions/tree/master/0204-count-primes) |
 | [0523-continuous-subarray-sum](https://github.com/princesinghi7/leetcode-solutions/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/princesinghi7/leetcode-solutions/tree/master/0560-subarray-sum-equals-k) |
+| [1260-shift-2d-grid](https://github.com/princesinghi7/leetcode-solutions/tree/master/1260-shift-2d-grid) |
 | [1946-largest-number-after-mutating-substring](https://github.com/princesinghi7/leetcode-solutions/tree/master/1946-largest-number-after-mutating-substring) |
 | [3312-sorted-gcd-pair-queries](https://github.com/princesinghi7/leetcode-solutions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/princesinghi7/leetcode-solutions/tree/master/3532-path-existence-queries-in-a-graph-i) |
@@ -127,6 +128,7 @@
 ## Simulation
 |  |
 | ------- |
+| [1260-shift-2d-grid](https://github.com/princesinghi7/leetcode-solutions/tree/master/1260-shift-2d-grid) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/princesinghi7/leetcode-solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Combinatorics
 |  |
@@ -147,4 +149,8 @@
 | ------- |
 | [0316-remove-duplicate-letters](https://github.com/princesinghi7/leetcode-solutions/tree/master/0316-remove-duplicate-letters) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/princesinghi7/leetcode-solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
+## Matrix
+|  |
+| ------- |
+| [1260-shift-2d-grid](https://github.com/princesinghi7/leetcode-solutions/tree/master/1260-shift-2d-grid) |
 <!---LeetCode Topics End-->
