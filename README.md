@@ -36,6 +36,7 @@
 | [1021-remove-outermost-parentheses](https://github.com/princesinghi7/leetcode-solutions/tree/master/1021-remove-outermost-parentheses) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/princesinghi7/leetcode-solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1946-largest-number-after-mutating-substring](https://github.com/princesinghi7/leetcode-solutions/tree/master/1946-largest-number-after-mutating-substring) |
+| [3499-maximize-active-section-with-trade-i](https://github.com/princesinghi7/leetcode-solutions/tree/master/3499-maximize-active-section-with-trade-i) |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/princesinghi7/leetcode-solutions/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
 ## Prefix Sum
 |  |
@@ -125,6 +126,7 @@
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/princesinghi7/leetcode-solutions/tree/master/0204-count-primes) |
+| [3499-maximize-active-section-with-trade-i](https://github.com/princesinghi7/leetcode-solutions/tree/master/3499-maximize-active-section-with-trade-i) |
 ## Simulation
 |  |
 | ------- |
